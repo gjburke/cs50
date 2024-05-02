@@ -1,0 +1,19 @@
+Times:
+
+10 simulations: 0m0.035s
+100 simulations: 0m0.029s
+1000 simulations: 0m0.052s
+10000 simulations: 0m0.115s
+100000 simulations: 0m0.758s
+1000000 simulations: 0m7.424s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+For the women's cup the predictions got it all wrong, for every simulation amount. With less simulations the country with the highest chance bounced around between 10, 100, and 1000. Witht he higher simulations, the top three was fairly consistently Germany, England, and then the US. Germany was predicted to have the highest winning chance, however.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+I would say around 1000 simulations since any of the amount of simulations above that predict very similar results. There's not much of a point to using more computing power for more simulations if you get similar results.

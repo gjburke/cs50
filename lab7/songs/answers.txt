@@ -1,0 +1,27 @@
+Collecting my data...
+
+Query: SELECT AVG(energy) FROM songs; SELECT AVG(valence) FROM songs; SELECT AVG(danceability) FROM songs;
+Results:
++-------------+
+| AVG(energy) |
++-------------+
+| 0.65906     |
++-------------+
++--------------+
+| AVG(valence) |
++--------------+
+| 0.484443     |
++--------------+
++-------------------+
+| AVG(danceability) |
++-------------------+
+| 0.71646           |
++-------------------+
+
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+    They like music that they can dance to and usually like high energy, but are mid of the way in how happy the songs sound. Even if the songs sound sad, they still might be daneable and have high energy.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+    This aura doesn't represent all aspects of music. It doesn't take into account the loudness, speechiness, temp, or duration of songs. These statistics also may not reflect what types of songs the listener listens to. You might want to line these stats up with the genre of the song, trying to characterize the listener's music to the genres they listen to. Based off the general feeling of the genres and subgenres that the user listens to, you could calculate the aura of what songs the user listens to.

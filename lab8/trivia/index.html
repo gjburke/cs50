@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function rightChoice(event) {
+                var button = event.target.style.backgroundColor = "green";
+                document.getElementById("multipleChoiceResult").innerHTML = "Correct!";
+            }
+            function wrongChoice(event) {
+                var button = event.target.style.backgroundColor = "red";
+                document.getElementById("multipleChoiceResult").innerHTML = "Incorrect";
+            }
+            function checkResponse() {
+                var input = document.getElementById("freeResponseInput");
+                var response = input.value;
+                if (response.localeCompare("Joker 2019") == 0) {
+                    input.style.backgroundColor = "green";
+                    document.getElementById("freeResponseResult").innerHTML = "Correct!";
+                }
+                else {
+                    input.style.backgroundColor = "red";
+                    document.getElementById("freeResponseResult").innerHTML = "Incorrect";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Why so serioussssss????</h3>
+                <div>
+                    <button type="submit" onclick="wrongChoice(event)">Ben Affleck</button>
+                    <button type="submit" onclick="rightChoice(event)">Joker</button>
+                    <button type="submit" onclick="wrongChoice(event)">Joe Nameth</button>
+                </div>
+                <h3 id="multipleChoiceResult"></h3>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the best movie with Joker in it?</h3>
+                <input type="text" id="freeResponseInput">
+                <button type="submit" onclick="checkResponse()">Check Answer</button>
+                <h3 id = "freeResponseResult">
+            </div>
+        </div>
+    </body>
+</html>
