@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+        <title>Win</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Winner!</h1>
+        </div>
+        <div>
+            <p>The winner is: {{ winner }}</p>
+        </div>
+        <div>
+            <form action="/win" method="post">
+                <input type="submit" id="again" name="again" value="Play Again">
+            </form>
+        </div>
+    </body>
+</html>

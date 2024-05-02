@@ -1,0 +1,17 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When the scale of the numbers went up the time the sort took went up a significant amount.
+Yet when the numbers are sorted, the time it took to sort was much lower. This is a result of bubble sort being
+able tocheck if everything is sorted yet.
+
+sort2 uses: Merge Sort
+
+How do you know?: When the scale of the numbers went up, the time this sort took was significantly lower than
+the other two sorts. This can be attributed to merge sort having a theta of nlog(n), which is faster than
+the two other algorithms.
+
+sort3 uses: Selection Sort
+
+How do you know?: When the scale of the numbers with up the time to sort increased a significant amount. When
+comparing between random, reversed, and sorted, all of the times were relatively similar. This is a property of
+selection sort as no matter if the array is sorted or not, it still has to check every index for each pass. 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+        <title>Game</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Tic-Tac-Toe!</h1>
+        </div>
+        <div id="ttt-container">
+            <div class="grid-container">
+                {% for i in range(3) %}
+                    {% for j in range(3) %}
+                        <div class="grid-item" id="{{ indRow[i] }}{{ indCol[j] }}">
+                            <div class="spot">{{ board[i][j] }}</div>
+                            <div class="select">
+                                <form action="/" method="post">
+                                    {% if board[i][j] == " " %}
+                                        <input type="submit" id="spot" name="spot" value="{{i}}{{j}}">
+                                    {% else %}
+                                        <input type="submit" id="spot" name="spot" value="{{i}}{{j}}" style="display:none;">
+                                    {% endif %}
+                                </form>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
